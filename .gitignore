@@ -2,4 +2,4 @@
 /dist/
 custom-elements.json
 # only generated for size check
-my-element.bundled.js
+medium-feed.bundled.js

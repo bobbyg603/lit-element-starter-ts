@@ -3,8 +3,8 @@
   "private": true,
   "version": "1.0.4",
   "description": "A simple web component",
-  "main": "./dist/src/my-element.js",
-  "module": "./dist/src/my-element.js",
+  "main": "./dist/src/medium-feed.js",
+  "module": "./dist/src/medium-feed.js",
   "type": "module",
   "scripts": {
     "build": "tsc",
@@ -18,7 +18,7 @@
     "docs:clean": "rimraf dist/docs",
     "docs:gen": "eleventy --config=.eleventy.cjs",
     "docs:gen:watch": "eleventy --config=.eleventy.cjs --watch",
-    "docs:build": "rollup -c --file dist/docs/my-element.bundled.js",
+    "docs:build": "rollup -c --file dist/docs/medium-feed.bundled.js",
     "docs:assets": "cp node_modules/prismjs/themes/prism-okaidia.css dist/docs/",
     "docs:serve": "wds --root-dir=dist/docs --node-resolve --watch",
     "analyze": "cem analyze --litelement --globs \"src/**/*.ts\"",
@@ -30,7 +30,7 @@
     "test:watch": "wtr --watch",
     "test:prod": "MODE=prod wtr",
     "test:prod:watch": "MODE=prod wtr --watch",
-    "checksize": "rollup -c ; cat my-element.bundled.js | gzip -9 | wc -c ; rm my-element.bundled.js"
+    "checksize": "rollup -c ; cat medium-feed.bundled.js | gzip -9 | wc -c ; rm medium-feed.bundled.js"
   },
   "keywords": [
     "web-components",
