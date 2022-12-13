@@ -4,17 +4,25 @@
   <head>
     <meta charset="utf-8" />
     <title>&lt;medium-feed> Demo</title>
+    <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
     <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
     <script src="../node_modules/lit/polyfill-support.js"></script>
-    <script type="module" src="../dist/src/medium-feed.js"></script>
+    <script type="module" src="../dist/src/index.js"></script>
     <style>
-      p {
-        border: solid 1px blue;
-        padding: 8px;
+      html {
+        font-family: "Roboto";
+      }
+
+      .container {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
       }
     </style>
   </head>
   <body>
-    <medium-feed url="https://bobbyg603.medium.com/feed" count="3"></medium-feed>
+    <div class="container">
+      <medium-feed url="https://bobbyg603.medium.com/feed" count="3"></medium-feed>
+    </div>
   </body>
 </html>
