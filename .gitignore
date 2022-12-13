@@ -3,3 +3,4 @@
 custom-elements.json
 # only generated for size check
 medium-feed.bundled.js
+.DS_Store
